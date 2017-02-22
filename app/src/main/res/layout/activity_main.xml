@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
-    android:layout_marginTop="@dimen/activity_vertical_margin"
     android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
@@ -22,42 +22,45 @@
             android:orientation="vertical">
 
             <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Score"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Touch Down"
-                android:onClick="addTouchdownForTeamA"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Extra Point"
-                android:onClick="addExtraPointForTeamA"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Conversion"
-                android:onClick="addConversionForTeamA"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Field Goal"
-                android:onClick="addFieldGoalForTeamA"/>
+                android:onClick="addTouchdownForTeamA"
+                android:text="Touch Down" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Safety"
-                android:onClick="addSafetyForTeamA" />
+                android:onClick="addExtraPointForTeamA"
+                android:text="Extra Point" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addConversionForTeamA"
+                android:text="Conversion" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addFieldGoalForTeamA"
+                android:text="Field Goal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addSafetyForTeamA"
+                android:text="Safety" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,39 +71,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score"/>
+                android:text="Score" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"/>
+                android:text="0" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addTouchdownForTeamB"
-                android:text="Touch Down"/>
+                android:text="Touch Down" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addExtraPointForTeamB"
-                android:text="Extra Point"/>
+                android:text="Extra Point" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addConversionForTeamB"
-                android:text="Conversion"/>
+                android:text="Conversion" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addFieldGoalForTeamB"
-                android:text="Field Goal"/>
+                android:text="Field Goal" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="addSafetyForTeamB"
-                android:text="Safety"/>
+                android:text="Safety" />
         </LinearLayout>
 
     </LinearLayout>
@@ -113,8 +120,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="@dimen/small_button_height"
-            android:text="Reset"
-            android:onClick="resetBothTeamScores"/>
+            android:onClick="resetBothTeamScores"
+            android:text="Reset" />
 
 
     </LinearLayout>
