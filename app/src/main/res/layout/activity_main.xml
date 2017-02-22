@@ -71,6 +71,7 @@
                 android:text="Score"/>
 
             <TextView
+                android:id="@+id/team_b_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"/>
@@ -78,22 +79,27 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="addTouchdownForTeamB"
                 android:text="Touch Down"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="addExtraPointForTeamB"
                 android:text="Extra Point"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="addConversionForTeamB"
                 android:text="Conversion"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="addFieldGoalForTeamB"
                 android:text="Field Goal"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="addSafetyForTeamB"
                 android:text="Safety"/>
         </LinearLayout>
 

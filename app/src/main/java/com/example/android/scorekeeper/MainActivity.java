@@ -58,32 +58,32 @@ public class MainActivity extends AppCompatActivity {
     //touchdown
     public void addTouchdownForTeamB(View view) {
         scoreTeamB += 6;
-        displayScoreForTeamA(scoreTeamB);
+        displayScoreForTeamB(scoreTeamB);
     }
 
 
     //extrapoint
     public void addExtraPointForTeamB(View view) {
         scoreTeamB += 1;
-        displayScoreForTeamA(scoreTeamB);
+        displayScoreForTeamB(scoreTeamB);
     }
 
     //conversion
     public void addConversionForTeamB(View view) {
         scoreTeamB += 2;
-        displayScoreForTeamA(scoreTeamB);
+        displayScoreForTeamB(scoreTeamB);
     }
 
     //fieldgoal
     public void addFieldGoalForTeamB(View view) {
         scoreTeamB += 3;
-        displayScoreForTeamA(scoreTeamB);
+        displayScoreForTeamB(scoreTeamB);
     }
 
     //safety
     public void addSafetyForTeamB(View view) {
         scoreTeamB += 2;
-        displayScoreForTeamA(scoreTeamB);
+        displayScoreForTeamB(scoreTeamB);
     }
 
     //reset
