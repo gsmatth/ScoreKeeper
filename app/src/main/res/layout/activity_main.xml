@@ -14,98 +14,157 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
+        android:layout_weight="7"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="sans-serif"
+                android:text="Score"
+                android:textColor="@color/dark_black"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@color/dark_black"
+                android:textSize="40sp" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
                 android:onClick="addTouchdownForTeamA"
-                android:text="Touch Down" />
+                android:text="Touch Down"
+                android:textAllCaps="true" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
                 android:onClick="addExtraPointForTeamA"
                 android:text="Extra Point" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
                 android:onClick="addConversionForTeamA"
                 android:text="Conversion" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
                 android:onClick="addFieldGoalForTeamA"
                 android:text="Field Goal" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginRight="@dimen/button_right_margin"
                 android:onClick="addSafetyForTeamA"
                 android:text="Safety" />
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Score" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:fontFamily="sans-serif"
+                android:text="Score"
+                android:textColor="@color/dark_black"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textColor="@color/dark_black"
+                android:textSize="40sp" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginLeft="12dp"
                 android:onClick="addTouchdownForTeamB"
                 android:text="Touch Down" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginLeft="@dimen/button_left_margin"
                 android:onClick="addExtraPointForTeamB"
                 android:text="Extra Point" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginLeft="@dimen/button_left_margin"
                 android:onClick="addConversionForTeamB"
                 android:text="Conversion" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginLeft="@dimen/button_left_margin"
                 android:onClick="addFieldGoalForTeamB"
                 android:text="Field Goal" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:layout_marginLeft="@dimen/button_left_margin"
                 android:onClick="addSafetyForTeamB"
                 android:text="Safety" />
         </LinearLayout>
@@ -113,16 +172,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="1">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/small_button_height"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
             android:onClick="resetBothTeamScores"
             android:text="Reset" />
-
 
     </LinearLayout>
 
