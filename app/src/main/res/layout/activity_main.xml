@@ -27,6 +27,7 @@
             android:text="Score"/>
 
             <TextView
+                android:id="@+id/team_a_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"/>
@@ -34,23 +35,29 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Touch Down"/>
+                android:text="Touch Down"
+                android:onClick="addTouchdownForTeamA"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Extra Point"/>
+                android:text="Extra Point"
+                android:onClick="addExtraPointForTeamA"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Conversion"/>
+                android:text="Conversion"
+                android:onClick="addConversionForTeamA"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Field Goal"/>
+                android:text="Field Goal"
+                android:onClick="addFieldGoalForTeamA"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Safety"/>
+                android:text="Safety"
+                android:onClick="addSafetyForTeamA" />
         </LinearLayout>
 
         <LinearLayout
@@ -100,7 +107,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="@dimen/small_button_height"
-            android:text="Reset"/>
+            android:text="Reset"
+            android:onClick="resetBothTeamScores"/>
 
 
     </LinearLayout>
